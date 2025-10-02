@@ -6,10 +6,12 @@
     --code-border: rgb(178, 163, 142);
 }
 
-.dark {
+@media (prefers-color-scheme: dark) {
+    :root {
     --content-primary: rgb(235, 219, 178);
     --content-secondary: rgb(132, 122, 114);
     --background: rgb(40, 40, 40);
     --code-background: rgb(50, 50, 50);
     --code-border: rgb(112, 102, 94);
+}
 }

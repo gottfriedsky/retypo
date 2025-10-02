@@ -84,26 +84,6 @@ input {
   }
 }
 
-/* Code blocks */
-
-.copy-code-button {
-  background-color: var(--background);
-  font-family: var(--font-mono);
-  padding: 3px 6px;
-  font-size: 0.8em;
-  border-radius: var(--copy-code-button-border-radius);
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  z-index: 1;
-  display: none;
-  border: 1px solid var(--code-border);
-}
-
-pre:hover .copy-code-button {
-  display: block;
-}
-
 pre {
   position: relative;
   padding: var(--code-padding);
@@ -626,11 +606,7 @@ blockquote {
   margin: 1.5rem;
   margin-left: 0;
   margin-right: 0;
+  padding-left: 1rem;
   border-left: solid 2px;
   color: var(--content-secondary);
-}
-
-blockquote p {
-  margin-left: 1rem;
-  margin-right: 1rem;
 }
