@@ -6,6 +6,15 @@
 {{ partial "breadcrumbs.html" . }}
 {{ end }}
 
+{{ if .Param "toc" }}
+  <aside class="toc-float">
+    <p class="toc-title">Contents</p>
+    <div class="toc-content">
+      {{ .TableOfContents }}
+    </div>
+  </aside>
+{{ end }}
+
 <div {{ if .Param "autonumber" }} class="autonumber" {{ end }}>
   <article>
     <header class="single-intro-container">
