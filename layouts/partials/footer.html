@@ -2,7 +2,7 @@
 {{ if $showFooter }}
     {{/* Footer start hook */}}
     {{ partial "functions/get_hook.html" (dict "hook" "footer_start" "context" .) }}
-    <p>&copy; {{ now.Year }}&nbsp;</p>  /* Add this line for the year */
+    <p>&copy; {{ now.Year }}&nbsp;</p>
     {{ if not .Site.Params.footerContent }}
     <p>Powered by
         <a href="https://gohugo.io/">Hugo</a>
