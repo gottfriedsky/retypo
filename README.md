@@ -51,12 +51,12 @@ Every SVG present on the website is usable on the theme.
 
 ## 6 Additional changes by me
 * Directly copied some of [Martin Fischer](https://git.push-f.com/tastefejl/)'s changes
-- enabled dark theme via CSS
-- made /content/home.md for the home template
-- removed render image hook
-- added VSCode syntax highlighting
-- removed code-copy.js and buttons
-- fixed Blockquote style
+ - enabled dark theme via CSS
+ - made /content/home.md for the home template
+ - removed render image hook
+ - added VSCode syntax highlighting
+ - removed code-copy.js and buttons
+ - fixed Blockquote style
 
 * Added admonitions, directly copied from [KKKZOZ](https://github.com/KKKZOZ/hugo-admonitions). No style changed yet.
 
