@@ -48,3 +48,18 @@ Use the [discussion tab](https://github.com/tomfran/typo/discussions) to share i
 
 The SVGs for social icons are taken from [Simple Icons](https://github.com/simple-icons/simple-icons).
 Every SVG present on the website is usable on the theme.
+
+## 6 Additional changes by me
+* Directly copied some of [Martin Fischer](https://git.push-f.com/tastefejl/)'s changes
+- enabled dark theme via CSS
+- made /content/home.md for the home template
+- removed render image hook
+- added VSCode syntax highlighting
+- removed code-copy.js and buttons
+- fixed Blockquote style
+
+* Added admonitions, directly copied from [KKKZOZ](https://github.com/KKKZOZ/hugo-admonitions). No style changed yet.
+
+* Added sidenotes, inspired by [Scott Laird](https://scottstuff.net/posts/2024/12/16/sidenotes-in-hugo-with-fixit/)'s posts
+
+* Changed Table of Content's style
