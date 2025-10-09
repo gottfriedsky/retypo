@@ -69,10 +69,11 @@
     {{- end }}
     
     {{- /* Page content */}}
-    
+    {{ partial "series.html" . }}
     <div class="single-content">
       {{ .Content }}
     </div>
+    {{ partial "series.html" . }}
   </article>
   
   {{- /* Comments */}}
