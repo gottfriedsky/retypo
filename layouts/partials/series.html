@@ -1,20 +1,22 @@
 {{ if .Params.series }}
-<div>
-    This article is part of {{ index .Params.series }} series.
+  {{ $seriesName := index .Params.series 0 }}
+  {{ $seriesURL := (print "/series/" (urlize $seriesName) "/") }}
+  <div>
+    This article is part of the <a href="{{ $seriesURL }}">{{ $seriesName }}</a> series.
     <ul class="list-group">
-        {{ range $num,$post := (index .Site.Taxonomies.series (index .Params.series 0 | urlize)).Pages.ByDate }}
-            {{ if eq $post.Permalink $.Page.Permalink }}
-                <li class="list-group-item active">
-                    Part {{ add $num 1 }}: You are here.
-                </li>
-            {{ else }}
-                <li class="list-group-item">
-                    <a href="{{$post.Permalink}}">
-                        Part {{ add $num 1 }}: {{ $post.Params.title}}
-                    </a>
-                </li>
-            {{end}}
-        {{end}}
+      {{ range $num,$post := (index .Site.Taxonomies.series (urlize $seriesName)).Pages.ByDate }}
+        {{ if eq $post.Permalink $.Page.Permalink }}
+          <li class="list-group-item active">
+            Part {{ add $num 1 }}: You are here.
+          </li>
+        {{ else }}
+          <li class="list-group-item">
+            <a href="{{ $post.Permalink }}">
+              Part {{ add $num 1 }}: {{ $post.Params.title }}
+            </a>
+          </li>
+        {{ end }}
+      {{ end }}
     </ul>
-</div>
-{{end}}
+  </div>
+{{ end }}
