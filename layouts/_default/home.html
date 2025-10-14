@@ -2,6 +2,8 @@
 
 {{ .Content }}
 
+{{ readFile "content/home.md" | markdownify }}
+
 {{/* Intro summary section */}}
 
 {{ if or .Site.Params.homeIntroTitle .Site.Params.homeIntroContent }}
