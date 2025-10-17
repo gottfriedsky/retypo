@@ -445,6 +445,7 @@ figure {
 
   img {
     display: block;
+    margin: auto;
     max-width: 100%;
     height: auto;
   }
@@ -498,6 +499,7 @@ figcaption {
   font-size: var(--caption-font-size);
   margin-top: 1rem;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 /* 404 */
